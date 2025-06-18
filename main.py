@@ -2,7 +2,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
+# The '/' route, is the home page
+# This function is a python decorator - gives additional functionality to a function
+@app.route("/") # Called a syntactic sugar - syntax that makes it easier to write an alternative line of code
 def hello_world():
     return "<p>Hello, World!</p>"
 
